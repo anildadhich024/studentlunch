@@ -1,0 +1,160 @@
+@font-face {
+    font-family: bringheart;
+    src: url(../fonts/BringHeart-Regular.ttf);
+}
+
+.pt20{
+    padding-top:8%;
+} 
+.loginicon img{
+    max-width: 90px;
+}
+#loginscreen{
+    background:#f8f8fb;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+}
+.loginbox{
+    max-width: 500px;
+    background:#fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.loginbox:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.loginheading {
+    font-family: bringheart , 'Roboto' , sans-serif;
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: 13px;
+    font-size: 35px;
+    line-height: 39px;
+    color: #003366;
+}
+.loginform .form-control{
+    background-color: transparent !important;
+    border-radius: 50px;
+    height: 45px;
+}
+.loginform .form-control:focus {
+    color: #000000;
+    background-color: #e8f0fe;
+    border-color: #003366;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #0033663b;
+}
+.loginform .form-group{
+    position: relative;
+}
+.loginform .btn-primary{
+    width: 100%;
+    border-radius: 50px;
+    background: #003366;
+    border-color: #003366;
+    padding: 10px;
+}
+.loginform .btn-primary:focus {
+    box-shadow: none !important;
+    background-color: #003366 !important;
+    border-color: #003366 !important;
+}
+
+.rememberme .checkswitch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .rememberme .checkswitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .rememberme .checkslider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    height: 26px;
+    width: 45px;
+    border: 2px solid #00000096;
+}
+  
+.rememberme .checkslider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 15px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #000000b3;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+  .rememberme input:checked + .checkslider {
+    background-color: #003366;
+}
+  
+  .rememberme input:focus + .checkslider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+.rememberme input:checked + .checkslider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+    background: #fff;
+}
+.rememberme input:checked + .checkslider{
+    border: 2px solid #003366;
+}
+  .checkslider.round {
+    border-radius: 34px;
+  }
+  
+  .checkslider.round:before {
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 450px) {
+    .rememberq {
+      flex-direction: column !important;
+    }
+  }
+  .loginform .form-group{
+     position: relative;
+  }
+.loginform .passinputicon, .loginform .emailinputicon {
+    background: #f1f5fa;
+    position: absolute;
+    right: 6px;
+    height: 38px;
+    width: 40px;
+    bottom: 4px;
+    color: #a0accc;
+    border-radius: 50%;
+    padding: 3px 0px 0px 13px;
+    font-size: 22px;
+}
+.forgotpass{
+    color: #212529;
+    text-decoration: none;
+}
+
+.forgotpass a{
+    color: #212529;
+    text-decoration: none;
+}
+
