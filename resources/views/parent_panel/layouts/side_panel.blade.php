@@ -44,12 +44,12 @@
                 </span>
             </a>
             <ul class="collapse  {{ Request::is('parent_panel/place_order*') || Request::is('parent_panel/review_order*') || Request::is('parent_panel/checkout*') || Request::is('parent_panel/self/place_order*') || Request::is('parent_panel/self/review_order*') || Request::is('parent_panel/self/checkout*') ? 'show' : '' }}" data-parent="#accordionExample" id="collapseOne">
-                <li class="subitems">
+                <li class="subitems {{ Request::is('parent_panel/place_order*') || Request::is('parent_panel/review_order*') || Request::is('parent_panel/checkout*') ? 'active' : '' }}">
                     <a data-parent="#accordionExample" href="{{ url('parent_panel/place_order') }}">
                         Child Order
                     </a>
                 </li>
-                <li class="subitems">
+                <li class="subitems {{ Request::is('parent_panel/self/place_order*') || Request::is('parent_panel/self/review_order*') || Request::is('parent_panel/self/checkout*') ? 'active' : '' }}">
                     <a data-parent="#accordionExample" href="{{ url('parent_panel/self/place_order') }}">
                         Parents Order
                     </a>

@@ -68,7 +68,7 @@
             </ul>
         </li>
 
-        <li class="nav-item submenu" style="padding-left:20px;">
+        <li class="nav-item submenu">
             <a class="nav-link wave-effect collapsed wave-effect {{ Request::is('admin_panel/milk_bar/list*') || Request::is('admin_panel/milk_bar/manage*') || Request::is('admin_panel/milk_bar/detail*') || Request::is('admin_panel/teacher/list*') || Request::is('admin_panel/teacher/detail*') || Request::is('admin_panel/parent/list*') || Request::is('admin_panel/parent/detail*') ? 'active' : '' }}" data-toggle="collapse" data-target="#collapseThree">
             <i class="fa fa-users"></i>
             <span class="menu-title">Manage Users</span>
@@ -113,7 +113,7 @@
             <ul class="collapse {{ Request::is('admin_panel/manage_commission*') || Request::is('admin_panel/manage/plan*') || Request::is('admin_panel/plan/list*') || Request::is('admin_panel/manage_subscription*') || Request::is('admin_panel/subscription/list*') ? 'show' : '' }}" data-parent="#accordionExample" id="collapseFour">
                 <li class="subitems {{ Request::is('admin_panel/manage/plan*') || Request::is('admin_panel/plan/list*')? 'active' : '' }}">
                     <a data-parent="#accordionExample" href="{{url('admin_panel/plan/list')}}">
-                        Price Plan
+                        Pricing Plan
                     </a>
                 </li> 
                 <li class="subitems {{ Request::is('admin_panel/manage_commission*') ? 'active' : '' }}">
@@ -123,7 +123,7 @@
                 </li>
                 <li class="subitems {{ Request::is('admin_panel/manage_subscription*') || Request::is('admin_panel/subscription/list*') ? 'active' : '' }}">
                     <a data-parent="#accordionExample" href="{{url('admin_panel/manage_subscription')}}">
-                        Subscription
+                        Subscriptions
                     </a>
                 </li> 
             </ul>

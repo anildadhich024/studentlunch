@@ -1934,9 +1934,9 @@ div span.select2.select2-container {
   background: rgb(255 165 0) !important;
 }
 .sidebar > ul > li > ul > li.subitems.active {
-  background: #ffa500 !important;
+  background: #84b34fe6 !important;
 }
 .sidebar > ul > li > ul > li.subitems.active > a {
-  background: rgb(255 165 0) !important;
+  background: #84b34fe6 !important;
   color: rgb(255, 255, 255) !important;
 }

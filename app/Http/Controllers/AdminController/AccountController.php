@@ -33,7 +33,7 @@ class AccountController extends Controller
 	{
 		$rules = [
 	        'sCompName' 	=> 'required|min:5|max:50|regex:/^[\pL\s]+$/u',
-	        'sAbnNo' 		=> 'required|unique:mst_milk_bar,sAbn_No|digits:11',
+	        'sAbnNo' 		=> 'required|unique:mst_milk_bar,sAbn_No|min:11',
 	        'sFrstName' 	=> 'required|min:2|max:15|regex:/^[\pL\s]+$/u',
             'sLstName' 		=> 'required|min:2|max:15|regex:/^[\pL\s]+$/u',
             'sMobileNo' 	=> 'required',
